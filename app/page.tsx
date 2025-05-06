@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { initializeDummyData, setCurrentUser } from "@/lib/browser-storage"
+import '../styles/style.css'
 
 export default function Home() {
   const router = useRouter()
@@ -77,7 +78,7 @@ export default function Home() {
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold tracking-tight">Secure and Efficient Hospital Management</h2>
+            <h2 className="text-4xl font-bold tracking-tight typewriter">Secure and Efficient Hospital Management</h2>
             <p className="text-lg text-muted-foreground">
               Our advanced healthcare management system integrates patient records, appointments, and secure medical
               data storage into one seamless platform. With SSL encryption, two-factor authentication, and cloud
@@ -94,9 +95,9 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/placeholder.svg?height=400&width=400"
+              src="/landing.png"
               alt="Healthcare Management"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg h-80 w-auto"
               width={400}
               height={400}
             />

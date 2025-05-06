@@ -92,3 +92,29 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  background: #182028;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #8bf; /* Tailwind's equivalent color can be used if preferred */
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+  max-width: fit-content;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 39ch } /* Approx number of characters in your sentence */
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #8bf; }
+}
